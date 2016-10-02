@@ -13,6 +13,7 @@
       <div class="alert alert-<%= message_type %>"><%= message %></div>
     <% end %> <!-- ここまで追加 -->
     <%= yield %>
+    <%= debug params %>
   </div>
 </body>
 </html>
