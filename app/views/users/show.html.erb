@@ -2,3 +2,14 @@
   <%= gravatar_for @user %>
   <%= @user.name %>
 </h1>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    プロフィール
+  </div>
+    
+  <div class="panel-body">
+        <%= @user.profile %>
+        <br>
+        (<%= link_to "プロフィールの編集" , edit_user_path(@user.id) %>)
+  </div>
+</div>
